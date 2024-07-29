@@ -16,6 +16,13 @@ enableGitInfo = true
 [markup.tableOfContents]
   startLevel = 1
 
+[markup.goldmark.extensions]
+  [markup.goldmark.extensions.passthrough]
+    enable = true
+      [markup.goldmark.extensions.passthrough.delimiters]
+        block = [['\[', '\]'], ['$$', '$$']]
+        inline = [['\(', '\)'],  ['$', '$']]
+
 # Multi-lingual mode config
 # There are different options to translate files
 # See https://gohugo.io/content-management/multilingual/#translation-by-filename
@@ -47,15 +54,6 @@ enableGitInfo = true
   name = "Hugo Themes"
   url = "https://themes.gohugo.io/themes/hugo-book/"
   weight = 20
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      [markup.goldmark.extensions.passthrough]
-        enable = true
-        [markup.goldmark.extensions.passthrough.delimiters]
-          block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)'],  ['$', '$$']]
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.
