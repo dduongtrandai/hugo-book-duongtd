@@ -33,3 +33,8 @@ Here is some inline example: {{< katex >}}\pi(x){{< /katex >}}, rendered in the 
 f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
 {{< /katex >}}
 Text continues here.
+
+
+## Latex
+
+$$ f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi $$
