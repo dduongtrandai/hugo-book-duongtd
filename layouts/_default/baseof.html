@@ -6,6 +6,7 @@
   {{ if .Param "math" }}
     {{ partialCached "math.html" . }}
   {{ end }}
+  {{ partial "google_analytics.html" . }}
 </head>
 <body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
